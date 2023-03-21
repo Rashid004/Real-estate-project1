@@ -12,7 +12,7 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
+   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="style.css">
 
   <title>Easy to find home</title>
@@ -20,14 +20,14 @@
 <body>
   <header class="header">
     <nav class="main-nav">
-      
-       <img src="reallogo.png" alt="">
-      
-      <div>
+      <a class="logo" href="#">
+       <li><ion-icon class="logo-icon" name="home-outline"></ion-icon></li>
+      </a>
+    <div>
      <ul class="main-nav-list">
      <li><a href="#" class="nav-list-link">Home</a></li>
      <li><a href="#" class="nav-list-link">Explore</a></li>
-     <li><a href="#" class="nav-list-link">About us</a></li>
+     <li><a href="#" class="nav-list-link">About</a></li>
      <li><a href="#" class="nav-list-link">Help</a></li>
      </ul>
      </div>
@@ -178,11 +178,20 @@
         </section>
         <section class="section-view">
           <div class="container grid grid--2-cols">
-            <div>
+            <div class="section-mobile">
             <h3 class="subheading-fourth">Make your life easier downloading our app</h3>
             <p class="heading-description">
               This app will help you to find the best properties around you and contact with the sellers to get your dream house
             </p>
+              <ul class="app-view">
+              <li><span class="app-text">Get it now</span><br><ion-icon class="app-icon" name="logo-google-playstore"></ion-icon><a class="app-link" href="#">Google paly</a></li></ul> 
+
+               <ul class="app-view">
+              <li class="list-app"><span class="app-text">Download on</span><br><ion-icon class="app-icon" name="logo-apple"></ion-icon><a class="app-link" href="#">Apple store</a></li>  
+              </ul>
+             </div>
+              <div class="bg-mobile">
+                <img class="mobile-img" src="mobileview.22.jpg" alt="Mobile view">
             </div>
           </div>
         </section>
