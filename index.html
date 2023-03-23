@@ -12,26 +12,27 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-   <link rel="stylesheet" href="style2.css">
-  <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="index.js">
   <title>Easy to find home</title>
 </head>
 <body>
   <header class="header">
     <nav class="main-nav">
-      <a class="logo" href="#">
-       <li><ion-icon class="logo-icon" name="home-outline"></ion-icon></li>
-      </a>
-    <div>
+       <div>
+       <ion-icon class="logo-icon" name="home-outline"></ion-icon>
+       </div>
+      <div>
      <ul class="main-nav-list">
-     <li><a href="#" class="nav-list-link">Home</a></li>
-     <li><a href="#" class="nav-list-link">Explore</a></li>
-     <li><a href="#" class="nav-list-link">About</a></li>
-     <li><a href="#" class="nav-list-link">Help</a></li>
+     <li><a href="#home" class="nav-list-link">Home</a></li>
+     <li><a href="#expo" class="nav-list-link">Explore</a></li>
+     <li><a href="#About" class="nav-list-link">About</a></li>
+     <li><a href="#help" class="nav-list-link">Help</a></li>
      </ul>
-     </div>
+    </div>
     </nav>
+
     <div class="container-h">
     <div class="header-container">
     <div class="header-container-inner">
@@ -45,7 +46,7 @@
     </header>
 
     <main>
-    <section class="section-real">
+    <section class="section-real" id="About">
         <div class="container">
           <span class="subheading">Our Service</span>
           <h2 class="heading-secondary">
@@ -54,22 +55,22 @@
 
         <div class="container grid grid--3-cols">
           <div class="text-box">
-          <li><ion-icon class="icon" name="hourglass-outline"><ion-icon></ion-icon></li>
+          <span><ion-icon class="icon"      name="hourglass-outline"><ion-icon></ion-icon></span>
             <h3 class="heading-tertary">Property Insurance</h3>
             <p class="text-description">
-              Property insurance provides protection against most risks to property, such as fire, theft...</p>
+              Property insurance provides protection against most risks to property, such as fire, theft..</p>
           </div>
           <div class="text-box">
-            <li><ion-icon class="icon" name="leaf-outline"></ion-icon></li>
+            <span><ion-icon class="icon" name="leaf-outline"></ion-icon></span>
             <h3 class="heading-tertary">Advantage</h3>
             <p class="text-description">  
              All these properties have amazing prices, and you will find thousands of properties to choose from.</p>
           </div>
           <div class="text-box">
-            <li><ion-icon class="icon" name="earth-outline"></ion-icon></li>
+            <span><ion-icon class="icon" name="earth-outline"></ion-icon></span>
             <h3 class="heading-tertary">Low   Commission</h3>
             <p class="text-description">
-             We offer competitive commission structure that are straightforward and fair, making it simple and affordable.</p>
+             We offer competitive commission structure that are straightforward  making it simple and affordable.</p>
           </div>
         </div>
         </section>
@@ -101,7 +102,7 @@
           </div>
         </div>
           
-        <section class="section-homes">
+        <section class="section-homes" id="home">
           <div class="container">
             <h3 class="headingsub">
              This is the most closest properties to your location 
@@ -176,18 +177,18 @@
             </figure>
           </div>
         </section>
-        <section class="section-view">
+        <section class="section-view" id="expo">
           <div class="container grid grid--2-cols">
             <div class="section-mobile">
             <h3 class="subheading-fourth">Make your life easier downloading our app</h3>
             <p class="heading-description">
               This app will help you to find the best properties around you and contact with the sellers to get your dream house
             </p>
-              <ul class="app-view">
+            <ul class="app-view">
               <li><span class="app-text">Get it now</span><br><ion-icon class="app-icon" name="logo-google-playstore"></ion-icon><a class="app-link" href="#">Google paly</a></li></ul> 
 
                <ul class="app-view">
-              <li class="list-app"><span class="app-text">Download on</span><br><ion-icon class="app-icon" name="logo-apple"></ion-icon><a class="app-link" href="#">Apple store</a></li>  
+              <li class="list-app"><span class="app-text">Download on the</span><br><ion-icon class="app-icon" name="logo-apple"></ion-icon><a class="app-link" href="#">Apple store</a></li>  
               </ul>
              </div>
               <div class="bg-mobile">
@@ -195,8 +196,117 @@
             </div>
           </div>
         </section>
+        
+        <section class="section-review">
+          <h3 class="subheading-fifth">
+           What's users say about our service 
+          </h3>
+           <div class="container grid grid--4-cols">
+            <div class="customers-detail">
+              <img class="customer-img" src="customer21.jpg" alt="customer"><span><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon></span>
+              <h4 class="customer-name">Maary laurence</h4>
+               <p class="customer-review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ab alias, culpa officia nesciunt maiores.
+               </p>
+               <a href="#"><ion-icon class="doted-icon" name="ellipsis-vertical-outline"></ion-icon></a>
+              </div>
 
+             <div class="customers-detail">
+              <img class="customer-img" src="custimer2.jpg" alt="customer"><span><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star-half"></ion-icon></span>
+              <h4 class="customer-name">Johny doss</h4>
+               <p class="customer-review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ab alias, culpa officia nesciunt maiores.
+               </p>
+             <a href="#"><ion-icon class="doted-icon1" name="ellipsis-vertical-outline"></ion-icon></a>
+             </div>
+            
+             <div class="customers-detail">
+              <img class="customer-img" src="customer3.jpg" alt="customer"><span><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon></span>
+              <h4 class="customer-name">John henry</h4>
+               <p class="customer-review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ab alias, culpa officia nesciunt maiores.
+               </p>
+               <a href="#"><ion-icon class="doted-icon2" name="ellipsis-vertical-outline"></ion-icon></a>
+              </div>
 
+             <div class="customers-detail">
+              <img class="customer-img" src="customer4.jpg" alt="customer"><span><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star"></ion-icon><ion-icon class="star-icon" name="star-half"></ion-icon></span>
+              <h4 class="customer-name">Michel grey</h4>
+               <p class="customer-review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ab alias, culpa officia nesciunt maiores.
+               </p>
+               <a href="#"><ion-icon class="doted-icon3" name="ellipsis-vertical-outline"></ion-icon></a>
+              </div>
+            </div>
+           </div>
+        </section>
       </main>
-</body>
-</html>
+       <footer class="footer" id="help">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <p class="footer-heading">RealMaster</p></a>
+
+          <p class="address">
+           Find a luxury residence that suits
+           you, we will help to find the most sultable residence for your.
+          </p>
+           <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      <nav class="nav-col">
+        <p class="footer-heading">For private individuals</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Value a property</a></li>
+          <li><a class="footer-link" href="#">Sell your property</a></li>
+          <li><a class="footer-link" href="#">Search for real-estate ogencies</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Information</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">About us</a></li>
+          <li><a class="footer-link" href="#">Luxury homes blog</a></li>
+          <li><a class="footer-link" href="#">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Settings</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Langua</a></li>
+          <li><a class="footer-link" href="#">Currency</a></li>
+          <li><a class="footer-link" href="#">Download</a></li>
+        </ul>
+      </nav>
+       <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">
+        <a class="footer-link" href="#">
+        <p class="copyright-text">&copy; 2027 RealMaster by Jhonatan artist20 All rights reserved. Privacy Policy | Terms of Use | Cookie Policy I Company Information</p></a>
+      </div>
+      </body>
+    </html>
